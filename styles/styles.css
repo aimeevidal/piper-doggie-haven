@@ -213,11 +213,12 @@ footer {
 @media (max-width: 480px) {
     body {
         overflow-x: hidden;
+        max-height: 100vh;
 
     }
 
     .flex-container {
-        margin-bottom: 0;
+        
         flex-direction: column;
         margin-left: 0px;
     }
@@ -258,6 +259,17 @@ footer {
         flex-shrink: 1;
 
         
+    }
+
+    footer {
+        background-color: #D2DE32;
+        padding-top: 10px;
+        height: 5vh;
+        width: 100%;
+        position: fixed; 
+        bottom: 0; 
+        left: 0; 
+        z-index: 10;
     }
 }
 /* 
