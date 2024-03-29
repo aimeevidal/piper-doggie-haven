@@ -48,7 +48,7 @@ header {
 
 .flex-container {
     clear: left;
-    height: 95vh;
+    max-height: 95vh;
     /* background-image: url("../assets/cover-home-01.jpeg");
     object-fit: contain; */
     display: flex;
@@ -210,22 +210,55 @@ footer {
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .flex-container {
+        margin-bottom: 0;
+        flex-direction: column;
+        margin-left: 0px;
+    }
     .title-header {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .title-subheader {
         font-size: 1.5rem;
     }
+
+    .title-description-cover {
+        max-width: 350px;
+    }
+
     p.title-description {
-        font-size: 0.8rem
+        font-size: 0.5rem;
+        max-width: 400px;
+    }
+
+    .buttons {
+        max-width: 50px;
+    }
+
+    .one {
+        flex: 1;
+        padding: 0px;
+
+    }
+
+    .two {
+        flex: 0;
+        flex-shrink: 1;
+
+        
     }
 }
-
+/* 
 @media (max-width: 640px) {
     .one {
         padding-left: 50px;
         
-    }
-}
+    } 
+} */
