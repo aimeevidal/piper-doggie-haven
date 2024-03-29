@@ -1,6 +1,7 @@
 html {
     position: relative;
     min-height: 100%;
+    
 }
 
 body {
@@ -11,7 +12,7 @@ body {
     overflow-x: hidden;
     background-image: url("../assets/cover-home-01.jpeg");
     background-size: cover;
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
 }
 
 header {
@@ -44,21 +45,19 @@ header {
     float: left;
 }
 .home-logo > img {
-    max-width: 150px;
+    max-width: 120px;
 
     /* max-height: 20px; */
 }
 
 .flex-container {
-    clear: left;
-    max-height: 95vh;
-    /* background-image: url("../assets/cover-home-01.jpeg");
-    object-fit: contain; */
+    clear: both;
+    max-height: 93vh;
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
     margin: -10px;
-    margin-top: -40px;
+    /* margin-top: -40px; */
     gap: 5px;
     /**margin-top: 100px; **/
 }
@@ -70,6 +69,7 @@ header {
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
+    margin-top: -40px;
     -webkit-text-stroke: 0.5px white;
 }
 
@@ -105,7 +105,7 @@ p.title-description {
 footer {
     background-color: #D2DE32;
     padding-top: 10px;
-    height: 5vh;
+    height: 7vh;
     width: 100%;
     position: absolute; 
     bottom: 0; 
@@ -155,7 +155,7 @@ footer {
 .fa {
     padding: 10px;
     font-size: 30px;
-    width: 20px;
+    width: 12px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -196,6 +196,7 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
   }
   .social-button {
     border: none;
@@ -224,13 +225,24 @@ footer {
     .buttons {
         min-width: 35vw;
     }
+
+    footer {
+        background-color: #D2DE32;
+        /* padding-top: 10px; */
+        height: 7vh;
+        width: 100%;
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        z-index: 10;
+    }
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (max-width: 801px) {
     body {
-        overflow-x: hidden;
-        margin-bottom: 5vh;
+        /* overflow-x: hidden; */
+        margin-bottom: 7vh;
     }
 
     .home-logo > img {
@@ -287,7 +299,7 @@ footer {
     footer {
         background-color: #D2DE32;
         /* padding-top: 10px; */
-        height: 5vh;
+        height: 7vh;
         width: 100%;
         position: absolute; 
         bottom: 0; 
@@ -300,7 +312,7 @@ footer {
 @media (max-width: 480px) {
     body {
         overflow-x: hidden;
-        margin-bottom: 5vh;
+        margin-bottom: 7vh;
 
     }
 
@@ -353,10 +365,11 @@ footer {
     footer {
         background-color: #D2DE32;
         /* padding-top: 10px; */
-        height: 5vh;
+        height: 7vh;
         width: 100%;
-        position: absolute; 
-        bottom: 0; 
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -5px; 
         left: 0; 
         z-index: 10;
     }
