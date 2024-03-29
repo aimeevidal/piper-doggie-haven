@@ -1,14 +1,17 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: "Kalam", cursive;
     font-weight: 400;
     font-style: normal;
     color: #83A2FF;
-    max-width: 100%;
-    height: 100vh;
     overflow-x: hidden;
-    overflow-y: hidden;
     background-image: url("../assets/cover-home-01.jpeg");
     background-size: cover;
+    margin-bottom: 5vh;
 }
 
 header {
@@ -85,7 +88,7 @@ header {
 .title-description-cover {
     background-color: lightgrey;
     background: rgba(211, 211, 211, 0.5);
-    max-width: 400px;
+    max-width: 40vw;
     padding: 10px;
 }
 
@@ -93,7 +96,7 @@ p.title-description {
     font-size: 1rem;
     color: #016A70;
     text-align: justify;
-    max-width: 400px;
+    max-width: 40vw;
     -webkit-text-stroke: 0.1px black;
     opacity: 1;    
 
@@ -112,7 +115,9 @@ footer {
 
 .cover-buttons {
     display: flex;
-    gap: 10px;
+    gap: 2vw;
+    justify-content: flex-start;
+    
 }
 
 
@@ -136,8 +141,8 @@ footer {
 
 .two {
     flex: 1;
-    align-content: stretch;
-    height: 80vh;
+    /* align-content: stretch;
+    height: 80vh; */
 
 }
 
@@ -197,7 +202,7 @@ footer {
     background: none;
   }
 
-@media (max-width: 1240px) {
+@media (max-width: 1440px) {
     .title-header {
         font-size: 5rem;
     }
@@ -208,17 +213,99 @@ footer {
     p.title-description {
         font-size: 1rem
     }
+
+    .cover-buttons {
+        justify-content: center;
+        margin-top: 2vh;
+        max-width: 60vw;
+        gap: 2vh;
+    }
+
+    .buttons {
+        min-width: 35vw;
+    }
 }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width: 801px) {
+    body {
+        overflow-x: hidden;
+        margin-bottom: 5vh;
+    }
+
+    .home-logo > img {
+        max-width: 100px;
+    
+        /* max-height: 20px; */
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .title-header {
+        font-size: 4rem;
+    }
+
+    .title-subheader {
+        font-size: 2rem;
+    }
+
+    .title-description-cover {
+        max-width: 60vw;
+    }
+
+    p.title-description {
+        font-size: 1rem;
+        max-width: 60vw;
+    }
+
+    .cover-buttons {
+        justify-content: center;
+        margin-top: 2vh;
+        max-width: 60vw;
+        gap: 2vh;
+    }
+
+    .buttons {
+        min-width: 35vw;
+    }
+
+    .one {
+        flex: 1;
+        padding: 5vh;
+
+    }
+
+    .two {
+        flex: 0;
+        flex-shrink: 1;
+
+        
+    }
+
+    footer {
+        background-color: #D2DE32;
+        /* padding-top: 10px; */
+        height: 5vh;
+        width: 100%;
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        z-index: 10;
+    }
+}
+
 
 @media (max-width: 480px) {
     body {
         overflow-x: hidden;
-        max-height: 100vh;
+        margin-bottom: 5vh;
 
     }
 
     .flex-container {
-        
+        margin-top: 0px;
         flex-direction: column;
         margin-left: 0px;
     }
@@ -241,7 +328,9 @@ footer {
 
     .cover-buttons {
         justify-content: center;
+        max-width: 80vh;
         margin-top: 2vh;
+        gap: 2vw;
     }
 
     .buttons {
@@ -263,10 +352,10 @@ footer {
 
     footer {
         background-color: #D2DE32;
-        padding-top: 10px;
+        /* padding-top: 10px; */
         height: 5vh;
         width: 100%;
-        position: fixed; 
+        position: absolute; 
         bottom: 0; 
         left: 0; 
         z-index: 10;
