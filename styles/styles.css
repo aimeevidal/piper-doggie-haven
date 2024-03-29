@@ -213,7 +213,7 @@ footer {
 @media (max-width: 480px) {
     body {
         overflow-x: hidden;
-        overflow-y: hidden;
+
     }
 
     .flex-container {
@@ -222,7 +222,7 @@ footer {
         margin-left: 0px;
     }
     .title-header {
-        font-size: 3rem;
+        font-size: 3.1rem;
     }
 
     .title-subheader {
